@@ -1,0 +1,1276 @@
+--------------------------------------------------------------------------------
+Command:            ./testLinkedList.c
+Massif arguments:   (none)
+ms_print arguments: massif.out.5886
+--------------------------------------------------------------------------------
+
+
+    KB
+40.66^                                                                     #  
+     |                                                                 @@@:#::
+     |                                                                 @@@:#::
+     |                                                                 @@@:#::
+     |                              @::::::::::::::::::::::::::::::::::@@@:#::
+     |                              @: ::                            ::@@@:#::
+     |                            @@@: ::                            ::@@@:#::
+     |                            @@@: ::                            ::@@@:#::
+     |                           :@@@: ::                            ::@@@:#::
+     |                         :@:@@@: ::                            ::@@@:#::
+     |                        ::@:@@@: ::                            ::@@@:#::
+     |                        ::@:@@@: ::                            ::@@@:#::
+     |                        ::@:@@@: ::                            ::@@@:#::
+     |                       :::@:@@@: ::                            ::@@@:#::
+     |                       :::@:@@@: ::                            ::@@@:#::
+     |                      ::::@:@@@: ::                            ::@@@:#::
+     |                   ::@::::@:@@@: ::                            ::@@@:#::
+     |              ::@::: @::::@:@@@: ::                            ::@@@:#::
+     |             :: @::: @::::@:@@@: ::                            ::@@@:#::
+     |            ::: @::: @::::@:@@@: ::                            ::@@@:#::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   0.992
+
+Number of snapshots: 54
+ Detailed snapshots: [6, 12, 22, 26, 29, 30, 39, 42, 43, 48 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        176,226               24                5            19            0
+  2        185,969            3,736            3,512           224            0
+  3        191,696            3,832            3,560           272            0
+  4        198,529            4,512            4,176           336            0
+  5        208,412            7,152            6,800           352            0
+  6        235,393            8,176            7,824           352            0
+95.69% (7,824B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->40.90% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->40.90% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->40.90% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->40.90% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->40.90% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->40.90% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->25.05% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->25.05% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->25.05% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->25.05% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->25.05% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->25.05% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->19.57% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->19.57% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->19.57% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->19.57% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->19.57% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->19.57% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->06.95% (568B) 0x36FF666EC9: __fopen_internal (in /lib64/libc-2.12.so)
+| ->06.95% (568B) 0x36FF62F24D: read_alias_file (in /lib64/libc-2.12.so)
+|   ->06.95% (568B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|     ->06.95% (568B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|       ->06.95% (568B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|         ->06.95% (568B) 0x46154E: set_default_locale (in /bin/bash)
+|           ->06.95% (568B) 0x41BFA9: main (in /bin/bash)
+|             
+->01.76% (144B) 0x36FF680F30: strdup (in /lib64/libc-2.12.so)
+| ->01.61% (132B) 0x36FF628EFE: setlocale (in /lib64/libc-2.12.so)
+| | ->01.61% (132B) 0x46154E: set_default_locale (in /bin/bash)
+| |   ->01.61% (132B) 0x41BFA9: main (in /bin/bash)
+| |     
+| ->00.15% (12B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.47% (120B) 0x36FF62A107: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+| ->01.47% (120B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|   ->01.47% (120B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|     ->01.47% (120B) 0x46154E: set_default_locale (in /bin/bash)
+|       ->01.47% (120B) 0x41BFA9: main (in /bin/bash)
+|         
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  7        237,445            7,592            7,256           336            0
+  8        255,833            7,632            7,287           345            0
+  9        260,083            7,488            7,237           251            0
+ 10        272,136            7,512            7,245           267            0
+ 11        279,920            9,776            9,469           307            0
+ 12        307,893            9,776            9,469           307            0
+96.86% (9,469B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.21% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->34.21% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->34.21% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->34.21% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->34.21% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->34.21% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->20.95% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->20.95% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->20.95% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->20.95% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->20.95% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->20.95% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->16.37% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->16.37% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->16.37% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->16.37% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->16.37% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->16.37% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->12.93% (1,264B) 0x36FF634D00: qsort_r (in /lib64/libc-2.12.so)
+| ->12.93% (1,264B) 0x41B77E: ??? (in /bin/bash)
+|   ->12.93% (1,264B) 0x41C913: main (in /bin/bash)
+|     
+->09.82% (960B) 0x466301: xmalloc (in /bin/bash)
+| ->04.91% (480B) 0x42956C: cmd_init (in /bin/bash)
+| | ->04.91% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->04.91% (480B) 0x429591: cmd_init (in /bin/bash)
+|   ->04.91% (480B) 0x41C5C8: main (in /bin/bash)
+|     
+->01.36% (133B) in 7 places, all below massif's threshold (01.00%)
+| 
+->01.23% (120B) 0x36FF62A107: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+  ->01.23% (120B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+    ->01.23% (120B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+      ->01.23% (120B) 0x46154E: set_default_locale (in /bin/bash)
+        ->01.23% (120B) 0x41BFA9: main (in /bin/bash)
+          
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 13        315,983            8,544            8,232           312            0
+ 14        322,161           11,008           10,326           682            0
+ 15        327,427           12,272           11,188         1,084            0
+ 16        335,143           13,680           12,109         1,571            0
+ 17        343,146           15,392           13,186         2,206            0
+ 18        348,623           19,168           16,726         2,442            0
+ 19        358,547           21,200           17,984         3,216            0
+ 20        365,317           22,792           19,012         3,780            0
+ 21        371,330           23,528           19,448         4,080            0
+ 22        378,224           23,552           19,450         4,102            0
+82.58% (19,450B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->51.82% (12,205B) 0x466301: xmalloc (in /bin/bash)
+| ->11.50% (2,709B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->11.50% (2,709B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->11.50% (2,709B) 0x41C913: main (in /bin/bash)
+| |     
+| ->09.96% (2,345B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->09.95% (2,343B) 0x435B5F: ??? (in /bin/bash)
+| | | ->09.88% (2,328B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->09.88% (2,328B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->09.88% (2,328B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.06% (15B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.01% (2B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->09.17% (2,160B) 0x4342F1: ??? (in /bin/bash)
+| | ->09.17% (2,160B) 0x43447C: ??? (in /bin/bash)
+| |   ->09.17% (2,160B) 0x435B4F: ??? (in /bin/bash)
+| |     ->08.36% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |     | ->08.36% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |     |   ->08.36% (1,968B) 0x41C913: main (in /bin/bash)
+| |     |     
+| |     ->00.82% (192B) in 1+ places, all below ms_print's threshold (01.00%)
+| |     
+| ->06.52% (1,536B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.17% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->02.17% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->02.17% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->02.17% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->02.17% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->02.17% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->02.17% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->02.17% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->02.17% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->02.17% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->02.17% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->02.17% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->06.11% (1,440B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->06.11% (1,440B) 0x4344B5: ??? (in /bin/bash)
+| |   ->06.11% (1,440B) 0x435B4F: ??? (in /bin/bash)
+| |     ->05.57% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |     | ->05.57% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |     |   ->05.57% (1,312B) 0x41C913: main (in /bin/bash)
+| |     |     
+| |     ->00.54% (128B) in 1+ places, all below ms_print's threshold (01.00%)
+| |     
+| ->02.04% (480B) 0x42956C: cmd_init (in /bin/bash)
+| | ->02.04% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->02.04% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->02.04% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.68% (395B) 0x434305: ??? (in /bin/bash)
+| | ->01.68% (395B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.68% (395B) 0x435B4F: ??? (in /bin/bash)
+| |     ->01.60% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |     | ->01.60% (378B) 0x41B7D8: ??? (in /bin/bash)
+| |     |   ->01.60% (378B) 0x41C913: main (in /bin/bash)
+| |     |     
+| |     ->00.07% (17B) in 1+ places, all below ms_print's threshold (01.00%)
+| |     
+| ->01.68% (395B) 0x43449A: ??? (in /bin/bash)
+| | ->01.68% (395B) 0x435B4F: ??? (in /bin/bash)
+| |   ->01.60% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | ->01.60% (378B) 0x41B7D8: ??? (in /bin/bash)
+| |   |   ->01.60% (378B) 0x41C913: main (in /bin/bash)
+| |   |     
+| |   ->00.07% (17B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.13% (265B) in 9 places, all below massif's threshold (01.00%)
+|   
+->14.20% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->14.20% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->14.20% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->14.20% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->14.20% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->14.20% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->08.70% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->08.70% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->08.70% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->08.70% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->08.70% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->08.70% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->06.79% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->06.79% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->06.79% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->06.79% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->06.79% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->06.79% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.07% (253B) in 9 places, all below massif's threshold (01.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 23        387,005           24,248           19,873         4,375            0
+ 24        394,395           25,056           20,400         4,656            0
+ 25        400,658           26,400           21,280         5,120            0
+ 26        408,729           29,432           23,752         5,680            0
+80.70% (23,752B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->56.09% (16,507B) 0x466301: xmalloc (in /bin/bash)
+| ->11.42% (3,360B) 0x4342F1: ??? (in /bin/bash)
+| | ->11.42% (3,360B) 0x43447C: ??? (in /bin/bash)
+| |   ->09.79% (2,880B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->06.69% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->06.69% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->06.69% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->03.10% (912B) in 19 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.30% (384B) 0x4352DF: make_new_array_variable (in /bin/bash)
+| |   | ->01.30% (384B) in 3 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.33% (96B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->09.18% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->09.18% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->09.18% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->08.70% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->03.48% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->03.48% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.74% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.74% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.74% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.74% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.74% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.74% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.74% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.74% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.74% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.74% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.74% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.74% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.74% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.74% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.74% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.74% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.74% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.74% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->08.12% (2,389B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->08.11% (2,387B) 0x435B5F: ??? (in /bin/bash)
+| | | ->07.90% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->07.90% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->07.90% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.21% (61B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.01% (2B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->07.61% (2,240B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->07.61% (2,240B) 0x4344B5: ??? (in /bin/bash)
+| |   ->06.52% (1,920B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.46% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.46% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.46% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.07% (608B) in 19 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.09% (320B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->02.13% (628B) 0x434305: ??? (in /bin/bash)
+| | ->02.13% (628B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.77% (522B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.28% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->01.28% (378B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->01.28% (378B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->00.49% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   | 
+| |   ->00.36% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->02.13% (628B) 0x43449A: ??? (in /bin/bash)
+| | ->01.77% (522B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.28% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->01.28% (378B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->01.28% (378B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.49% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.36% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->02.01% (593B) in 12 places, all below massif's threshold (01.00%)
+| | 
+| ->01.63% (480B) 0x42956C: cmd_init (in /bin/bash)
+| | ->01.63% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.63% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.63% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.52% (448B) 0x454C81: array_create_element (in /bin/bash)
+|   ->01.52% (448B) in 2 places, all below massif's threshold (01.00%)
+|     
+->11.36% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->11.36% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->11.36% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->11.36% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->11.36% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->11.36% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->06.96% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->06.96% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->06.96% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->06.96% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->06.96% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->06.96% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->05.44% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.44% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.44% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.44% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.44% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.44% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->00.86% (253B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27        415,317           29,488           23,794         5,694            0
+ 28        419,804           31,128           25,272         5,856            0
+ 29        431,962           31,128           25,272         5,856            0
+81.19% (25,272B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->56.04% (17,443B) 0x466301: xmalloc (in /bin/bash)
+| ->11.10% (3,456B) 0x4342F1: ??? (in /bin/bash)
+| | ->11.10% (3,456B) 0x43447C: ??? (in /bin/bash)
+| |   ->09.56% (2,976B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->06.32% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->06.32% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->06.32% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->03.24% (1,008B) in 21 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.23% (384B) 0x4352DF: make_new_array_variable (in /bin/bash)
+| |   | ->01.23% (384B) in 3 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.31% (96B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->08.68% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->08.68% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->08.68% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->08.22% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->03.29% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->03.29% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.64% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.64% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.64% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.64% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.64% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.64% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.64% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.64% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.64% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.64% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.64% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.64% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.64% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.64% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.64% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.64% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.64% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.64% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->08.11% (2,526B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->08.11% (2,524B) 0x435B5F: ??? (in /bin/bash)
+| | | ->07.47% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->07.47% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->07.47% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.64% (198B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.01% (2B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->07.40% (2,304B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->07.40% (2,304B) 0x4344B5: ??? (in /bin/bash)
+| |   ->06.37% (1,984B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.21% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.21% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.21% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.16% (672B) in 21 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.03% (320B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->02.08% (647B) 0x434305: ??? (in /bin/bash)
+| | ->02.08% (647B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.74% (541B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.21% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->01.21% (378B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->01.21% (378B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->00.52% (163B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   | 
+| |   ->00.34% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->02.08% (647B) 0x43449A: ??? (in /bin/bash)
+| | ->01.74% (541B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.21% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->01.21% (378B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->01.21% (378B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.52% (163B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.34% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.96% (610B) in 16 places, all below massif's threshold (01.00%)
+| | 
+| ->01.88% (584B) 0x433C0A: ??? (in /bin/bash)
+| | ->01.88% (584B) 0x4382A3: map_over (in /bin/bash)
+| |   ->01.88% (584B) 0x43888D: maybe_make_export_env (in /bin/bash)
+| |     ->01.88% (584B) 0x460E43: ??? (in /bin/bash)
+| |       ->01.88% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |         ->01.88% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |           ->01.88% (584B) 0x41C918: main (in /bin/bash)
+| |             
+| ->01.54% (480B) 0x42956C: cmd_init (in /bin/bash)
+| | ->01.54% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.54% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.54% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.44% (448B) 0x454C81: array_create_element (in /bin/bash)
+|   ->01.44% (448B) in 2 places, all below massif's threshold (01.00%)
+|     
+->10.74% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->10.74% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->10.74% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->10.74% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->10.74% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->10.74% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->06.58% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->06.58% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->06.58% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->06.58% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->06.58% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->06.58% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->05.14% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.14% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.14% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.14% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.14% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.14% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.88% (584B) 0x4662B0: xrealloc (in /bin/bash)
+| ->01.88% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+|   ->01.88% (584B) 0x460E43: ??? (in /bin/bash)
+|     ->01.88% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+|       ->01.88% (584B) 0x461519: set_default_lang (in /bin/bash)
+|         ->01.88% (584B) 0x41C918: main (in /bin/bash)
+|           
+->00.81% (253B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30        439,534           34,776           28,309         6,467            0
+81.40% (28,309B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.89% (20,480B) 0x466301: xmalloc (in /bin/bash)
+| ->09.94% (3,456B) 0x4342F1: ??? (in /bin/bash)
+| | ->09.94% (3,456B) 0x43447C: ??? (in /bin/bash)
+| |   ->08.56% (2,976B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->05.66% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->05.66% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->05.66% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.90% (1,008B) in 21 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.10% (384B) 0x4352DF: make_new_array_variable (in /bin/bash)
+| |   | ->01.10% (384B) in 3 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.28% (96B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->07.77% (2,701B) 0x4385BF: ??? (in /bin/bash)
+| | ->07.77% (2,701B) 0x43889D: maybe_make_export_env (in /bin/bash)
+| |   ->07.77% (2,701B) 0x460E43: ??? (in /bin/bash)
+| |     ->07.77% (2,701B) 0x4613C7: set_locale_var (in /bin/bash)
+| |       ->07.77% (2,701B) 0x461519: set_default_lang (in /bin/bash)
+| |         ->07.77% (2,701B) 0x41C918: main (in /bin/bash)
+| |           
+| ->07.77% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->07.77% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->07.77% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->07.36% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.94% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->02.94% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.47% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.47% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.47% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.47% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.47% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.47% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.47% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.47% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.47% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.47% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.47% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.47% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.47% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.47% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.47% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.47% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.47% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.47% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->07.26% (2,526B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->07.26% (2,524B) 0x435B5F: ??? (in /bin/bash)
+| | | ->06.69% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->06.69% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->06.69% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.57% (198B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.01% (2B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->06.63% (2,304B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->06.63% (2,304B) 0x4344B5: ??? (in /bin/bash)
+| |   ->05.71% (1,984B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->03.77% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->03.77% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->03.77% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->01.93% (672B) in 21 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.92% (320B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->02.72% (946B) in 19 places, all below massif's threshold (01.00%)
+| | 
+| ->01.86% (647B) 0x434305: ??? (in /bin/bash)
+| | ->01.86% (647B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.56% (541B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.09% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->01.09% (378B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->01.09% (378B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->00.47% (163B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   | 
+| |   ->00.30% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.86% (647B) 0x43449A: ??? (in /bin/bash)
+| | ->01.56% (541B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.09% (378B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->01.09% (378B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->01.09% (378B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.47% (163B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.30% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.68% (584B) 0x433C0A: ??? (in /bin/bash)
+| | ->01.68% (584B) 0x4382A3: map_over (in /bin/bash)
+| |   ->01.68% (584B) 0x43888D: maybe_make_export_env (in /bin/bash)
+| |     ->01.68% (584B) 0x460E43: ??? (in /bin/bash)
+| |       ->01.68% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |         ->01.68% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |           ->01.68% (584B) 0x41C918: main (in /bin/bash)
+| |             
+| ->01.38% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.38% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.38% (480B) 0x42956C: cmd_init (in /bin/bash)
+| | ->01.38% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.29% (448B) 0x454C81: array_create_element (in /bin/bash)
+|   ->01.29% (448B) in 2 places, all below massif's threshold (01.00%)
+|     
+->09.62% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->09.62% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->09.62% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->09.62% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->09.62% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->09.62% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->05.89% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.89% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.89% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.89% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.89% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.89% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->04.60% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->04.60% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->04.60% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->04.60% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->04.60% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->04.60% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.68% (584B) 0x4662B0: xrealloc (in /bin/bash)
+| ->01.68% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+|   ->01.68% (584B) 0x460E43: ??? (in /bin/bash)
+|     ->01.68% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+|       ->01.68% (584B) 0x461519: set_default_lang (in /bin/bash)
+|         ->01.68% (584B) 0x41C918: main (in /bin/bash)
+|           
+->00.73% (253B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 31        450,529           34,000           27,473         6,527            0
+ 32        458,747           33,832           27,389         6,443            0
+ 33        478,478           33,856           27,401         6,455            0
+ 34        488,081           34,168           27,557         6,611            0
+ 35        495,608           34,656           28,005         6,651            0
+ 36        917,040           34,712           28,053         6,659            0
+ 37        923,141           35,120           28,277         6,843            0
+ 38        930,623           35,064           28,258         6,806            0
+ 39        939,804           39,624           32,739         6,885            0
+82.62% (32,739B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.16% (21,858B) 0x466301: xmalloc (in /bin/bash)
+| ->08.84% (3,504B) 0x4342F1: ??? (in /bin/bash)
+| | ->08.84% (3,504B) 0x43447C: ??? (in /bin/bash)
+| |   ->07.63% (3,024B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.97% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.97% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.97% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.67% (1,056B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.21% (480B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->06.82% (2,701B) 0x4385BF: ??? (in /bin/bash)
+| | ->06.82% (2,701B) 0x43889D: maybe_make_export_env (in /bin/bash)
+| |   ->06.82% (2,701B) 0x460E43: ??? (in /bin/bash)
+| |     ->06.82% (2,701B) 0x4613C7: set_locale_var (in /bin/bash)
+| |       ->06.82% (2,701B) 0x461519: set_default_lang (in /bin/bash)
+| |         ->06.82% (2,701B) 0x41C918: main (in /bin/bash)
+| |           
+| ->06.82% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->06.82% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->06.82% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->06.46% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.58% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->02.58% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.29% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.29% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.29% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->06.40% (2,534B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->06.27% (2,485B) 0x435B5F: ??? (in /bin/bash)
+| | | ->05.87% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->05.87% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->05.87% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.40% (159B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.12% (49B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->05.90% (2,336B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->05.90% (2,336B) 0x4344B5: ??? (in /bin/bash)
+| |   ->05.09% (2,016B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->03.31% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->03.31% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->03.31% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->01.78% (704B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.81% (320B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->04.88% (1,934B) 0x451268: fd_to_buffered_stream (in /bin/bash)
+| | ->04.88% (1,934B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->04.88% (1,934B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.91% (758B) in 27 places, all below massif's threshold (01.00%)
+| | 
+| ->01.67% (663B) 0x434305: ??? (in /bin/bash)
+| | ->01.67% (663B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.67% (663B) 0x43449A: ??? (in /bin/bash)
+| | ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| | |   
+| | ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.37% (544B) 0x454C81: array_create_element (in /bin/bash)
+| | ->01.37% (544B) in 3 places, all below massif's threshold (01.00%)
+| |   
+| ->01.21% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.21% (480B) 0x42956C: cmd_init (in /bin/bash)
+|   ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+|     
+->08.44% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->08.44% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->08.44% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->08.44% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->08.44% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->08.44% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->07.67% (3,040B) 0x4662B0: xrealloc (in /bin/bash)
+| ->05.55% (2,200B) 0x451325: fd_to_buffered_stream (in /bin/bash)
+| | ->05.55% (2,200B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->05.55% (2,200B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.47% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+| | ->01.47% (584B) 0x460E43: ??? (in /bin/bash)
+| |   ->01.47% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |     ->01.47% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |       ->01.47% (584B) 0x41C918: main (in /bin/bash)
+| |         
+| ->00.65% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.17% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.17% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.17% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.17% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.17% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.17% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->04.04% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->04.04% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->04.04% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->04.04% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->04.04% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->04.04% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.09% (433B) in 11 places, all below massif's threshold (01.00%)
+| 
+->01.05% (416B) 0x36FF628094: __gconv_lookup_cache (in /lib64/libc-2.12.so)
+  ->01.05% (416B) 0x36FF621220: __gconv_find_transform (in /lib64/libc-2.12.so)
+    ->01.05% (416B) in 2 places, all below massif's threshold (01.00%)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 40        947,101           39,584           32,715         6,869            0
+ 41        956,945           39,584           32,715         6,869            0
+ 42        960,917           39,624           32,736         6,888            0
+82.62% (32,736B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.16% (21,855B) 0x466301: xmalloc (in /bin/bash)
+| ->08.84% (3,504B) 0x4342F1: ??? (in /bin/bash)
+| | ->08.84% (3,504B) 0x43447C: ??? (in /bin/bash)
+| |   ->07.63% (3,024B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.97% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.97% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.97% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.67% (1,056B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.21% (480B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->06.82% (2,701B) 0x4385BF: ??? (in /bin/bash)
+| | ->06.82% (2,701B) 0x43889D: maybe_make_export_env (in /bin/bash)
+| |   ->06.82% (2,701B) 0x460E43: ??? (in /bin/bash)
+| |     ->06.82% (2,701B) 0x4613C7: set_locale_var (in /bin/bash)
+| |       ->06.82% (2,701B) 0x461519: set_default_lang (in /bin/bash)
+| |         ->06.82% (2,701B) 0x41C918: main (in /bin/bash)
+| |           
+| ->06.82% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->06.82% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->06.82% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->06.46% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.58% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->02.58% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.29% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.29% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.29% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->06.40% (2,534B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->06.27% (2,485B) 0x435B5F: ??? (in /bin/bash)
+| | | ->05.87% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->05.87% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->05.87% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.40% (159B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.12% (49B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->05.90% (2,336B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->05.90% (2,336B) 0x4344B5: ??? (in /bin/bash)
+| |   ->05.09% (2,016B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->03.31% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->03.31% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->03.31% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->01.78% (704B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.81% (320B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->04.88% (1,934B) 0x451268: fd_to_buffered_stream (in /bin/bash)
+| | ->04.88% (1,934B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->04.88% (1,934B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.91% (755B) in 27 places, all below massif's threshold (01.00%)
+| | 
+| ->01.67% (663B) 0x434305: ??? (in /bin/bash)
+| | ->01.67% (663B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.67% (663B) 0x43449A: ??? (in /bin/bash)
+| | ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| | |   
+| | ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.37% (544B) 0x454C81: array_create_element (in /bin/bash)
+| | ->01.37% (544B) in 3 places, all below massif's threshold (01.00%)
+| |   
+| ->01.21% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.21% (480B) 0x42956C: cmd_init (in /bin/bash)
+|   ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+|     
+->08.44% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->08.44% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->08.44% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->08.44% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->08.44% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->08.44% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->07.67% (3,040B) 0x4662B0: xrealloc (in /bin/bash)
+| ->05.55% (2,200B) 0x451325: fd_to_buffered_stream (in /bin/bash)
+| | ->05.55% (2,200B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->05.55% (2,200B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.47% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+| | ->01.47% (584B) 0x460E43: ??? (in /bin/bash)
+| |   ->01.47% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |     ->01.47% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |       ->01.47% (584B) 0x41C918: main (in /bin/bash)
+| |         
+| ->00.65% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.17% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.17% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.17% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.17% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.17% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.17% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->04.04% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->04.04% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->04.04% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->04.04% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->04.04% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->04.04% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.09% (433B) in 11 places, all below massif's threshold (01.00%)
+| 
+->01.05% (416B) 0x36FF628094: __gconv_lookup_cache (in /lib64/libc-2.12.so)
+  ->01.05% (416B) 0x36FF621220: __gconv_find_transform (in /lib64/libc-2.12.so)
+    ->01.05% (416B) in 2 places, all below massif's threshold (01.00%)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 43        970,308           39,640           32,761         6,879            0
+82.65% (32,761B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->55.20% (21,880B) 0x466301: xmalloc (in /bin/bash)
+| ->08.84% (3,504B) 0x4342F1: ??? (in /bin/bash)
+| | ->08.84% (3,504B) 0x43447C: ??? (in /bin/bash)
+| |   ->07.63% (3,024B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.96% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.96% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.96% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.66% (1,056B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.21% (480B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->06.81% (2,701B) 0x4385BF: ??? (in /bin/bash)
+| | ->06.81% (2,701B) 0x43889D: maybe_make_export_env (in /bin/bash)
+| |   ->06.81% (2,701B) 0x460E43: ??? (in /bin/bash)
+| |     ->06.81% (2,701B) 0x4613C7: set_locale_var (in /bin/bash)
+| |       ->06.81% (2,701B) 0x461519: set_default_lang (in /bin/bash)
+| |         ->06.81% (2,701B) 0x41C918: main (in /bin/bash)
+| |           
+| ->06.81% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->06.81% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->06.81% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->06.46% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.58% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->02.58% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.29% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.29% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.29% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.29% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.29% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.29% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.29% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->06.39% (2,534B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->06.27% (2,485B) 0x435B5F: ??? (in /bin/bash)
+| | | ->05.87% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->05.87% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->05.87% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.40% (159B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.12% (49B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->05.89% (2,336B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->05.89% (2,336B) 0x4344B5: ??? (in /bin/bash)
+| |   ->05.09% (2,016B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->03.31% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->03.31% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->03.31% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->01.78% (704B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.81% (320B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->04.88% (1,934B) 0x451268: fd_to_buffered_stream (in /bin/bash)
+| | ->04.88% (1,934B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->04.88% (1,934B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.97% (780B) in 27 places, all below massif's threshold (01.00%)
+| | 
+| ->01.67% (663B) 0x434305: ??? (in /bin/bash)
+| | ->01.67% (663B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.67% (663B) 0x43449A: ??? (in /bin/bash)
+| | ->01.41% (557B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.41% (557B) in 23 places, all below massif's threshold (01.00%)
+| | |   
+| | ->00.27% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.37% (544B) 0x454C81: array_create_element (in /bin/bash)
+| | ->01.37% (544B) in 3 places, all below massif's threshold (01.00%)
+| |   
+| ->01.21% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.21% (480B) 0x42956C: cmd_init (in /bin/bash)
+|   ->01.21% (480B) 0x41C5C8: main (in /bin/bash)
+|     
+->08.44% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->08.44% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->08.44% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->08.44% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->08.44% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->08.44% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->07.67% (3,040B) 0x4662B0: xrealloc (in /bin/bash)
+| ->05.55% (2,200B) 0x451325: fd_to_buffered_stream (in /bin/bash)
+| | ->05.55% (2,200B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->05.55% (2,200B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.47% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+| | ->01.47% (584B) 0x460E43: ??? (in /bin/bash)
+| |   ->01.47% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |     ->01.47% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |       ->01.47% (584B) 0x41C918: main (in /bin/bash)
+| |         
+| ->00.65% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->05.17% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->05.17% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->05.17% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->05.17% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->05.17% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->05.17% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->04.04% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->04.04% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->04.04% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->04.04% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->04.04% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->04.04% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.09% (433B) in 11 places, all below massif's threshold (01.00%)
+| 
+->01.05% (416B) 0x36FF628094: __gconv_lookup_cache (in /lib64/libc-2.12.so)
+  ->01.05% (416B) 0x36FF621220: __gconv_find_transform (in /lib64/libc-2.12.so)
+    ->01.05% (416B) in 2 places, all below massif's threshold (01.00%)
+      
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 44        979,418           39,640           32,762         6,878            0
+ 45        988,681           40,144           33,258         6,886            0
+ 46        995,798           40,464           33,446         7,018            0
+ 47      1,001,236           41,192           34,015         7,177            0
+ 48      1,009,250           41,640           34,368         7,272            0
+82.54% (34,368B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->52.88% (22,019B) 0x466301: xmalloc (in /bin/bash)
+| ->08.41% (3,504B) 0x4342F1: ??? (in /bin/bash)
+| | ->08.41% (3,504B) 0x43447C: ??? (in /bin/bash)
+| |   ->07.26% (3,024B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->04.73% (1,968B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->04.73% (1,968B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->04.73% (1,968B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->02.54% (1,056B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->01.15% (480B) in 2 places, all below massif's threshold (01.00%)
+| |     
+| ->06.49% (2,701B) 0x4385BF: ??? (in /bin/bash)
+| | ->06.49% (2,701B) 0x43889D: maybe_make_export_env (in /bin/bash)
+| |   ->06.49% (2,701B) 0x460E43: ??? (in /bin/bash)
+| |     ->06.49% (2,701B) 0x4613C7: set_locale_var (in /bin/bash)
+| |       ->06.49% (2,701B) 0x461519: set_default_lang (in /bin/bash)
+| |         ->06.49% (2,701B) 0x41C918: main (in /bin/bash)
+| |           
+| ->06.49% (2,701B) 0x4374A6: initialize_shell_variables (in /bin/bash)
+| | ->06.49% (2,701B) 0x41B7D8: ??? (in /bin/bash)
+| |   ->06.49% (2,701B) 0x41C913: main (in /bin/bash)
+| |     
+| ->06.15% (2,560B) 0x44EDED: hash_create (in /bin/bash)
+| | ->02.46% (1,024B) 0x4344F9: make_new_assoc_variable (in /bin/bash)
+| | | ->02.46% (1,024B) 0x437396: ??? (in /bin/bash)
+| | |   ->01.23% (512B) 0x437A22: initialize_shell_variables (in /bin/bash)
+| | |   | ->01.23% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |   |   ->01.23% (512B) 0x41C913: main (in /bin/bash)
+| | |   |     
+| | |   ->01.23% (512B) 0x437A36: initialize_shell_variables (in /bin/bash)
+| | |     ->01.23% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |       ->01.23% (512B) 0x41C913: main (in /bin/bash)
+| | |         
+| | ->01.23% (512B) 0x434446: ??? (in /bin/bash)
+| | | ->01.23% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.23% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.23% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.23% (512B) 0x434455: ??? (in /bin/bash)
+| | | ->01.23% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| | |   ->01.23% (512B) 0x41B7D8: ??? (in /bin/bash)
+| | |     ->01.23% (512B) 0x41C913: main (in /bin/bash)
+| | |       
+| | ->01.23% (512B) 0x43440D: ??? (in /bin/bash)
+| |   ->01.23% (512B) 0x4373DB: initialize_shell_variables (in /bin/bash)
+| |     ->01.23% (512B) 0x41B7D8: ??? (in /bin/bash)
+| |       ->01.23% (512B) 0x41C913: main (in /bin/bash)
+| |         
+| ->06.09% (2,534B) 0x435AFF: make_variable_value (in /bin/bash)
+| | ->05.97% (2,485B) 0x435B5F: ??? (in /bin/bash)
+| | | ->05.59% (2,326B) 0x437459: initialize_shell_variables (in /bin/bash)
+| | | | ->05.59% (2,326B) 0x41B7D8: ??? (in /bin/bash)
+| | | |   ->05.59% (2,326B) 0x41C913: main (in /bin/bash)
+| | | |     
+| | | ->00.38% (159B) in 1+ places, all below ms_print's threshold (01.00%)
+| | | 
+| | ->00.12% (49B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->05.61% (2,336B) 0x44F0BB: hash_insert (in /bin/bash)
+| | ->05.61% (2,336B) 0x4344B5: ??? (in /bin/bash)
+| |   ->04.84% (2,016B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->03.15% (1,312B) 0x437459: initialize_shell_variables (in /bin/bash)
+| |   | | ->03.15% (1,312B) 0x41B7D8: ??? (in /bin/bash)
+| |   | |   ->03.15% (1,312B) 0x41C913: main (in /bin/bash)
+| |   | |     
+| |   | ->01.69% (704B) in 22 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.77% (320B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->04.64% (1,934B) 0x451268: fd_to_buffered_stream (in /bin/bash)
+| | ->04.64% (1,934B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->04.64% (1,934B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->02.21% (919B) in 33 places, all below massif's threshold (01.00%)
+| | 
+| ->01.59% (663B) 0x434305: ??? (in /bin/bash)
+| | ->01.59% (663B) 0x43447C: ??? (in /bin/bash)
+| |   ->01.34% (557B) 0x435B4F: ??? (in /bin/bash)
+| |   | ->01.34% (557B) in 23 places, all below massif's threshold (01.00%)
+| |   |   
+| |   ->00.25% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| |   
+| ->01.59% (663B) 0x43449A: ??? (in /bin/bash)
+| | ->01.34% (557B) 0x435B4F: ??? (in /bin/bash)
+| | | ->01.34% (557B) in 23 places, all below massif's threshold (01.00%)
+| | |   
+| | ->00.25% (106B) in 1+ places, all below ms_print's threshold (01.00%)
+| | 
+| ->01.31% (544B) 0x454C81: array_create_element (in /bin/bash)
+| | ->01.31% (544B) in 3 places, all below massif's threshold (01.00%)
+| |   
+| ->01.15% (480B) 0x429591: cmd_init (in /bin/bash)
+| | ->01.15% (480B) 0x41C5C8: main (in /bin/bash)
+| |   
+| ->01.15% (480B) 0x42956C: cmd_init (in /bin/bash)
+|   ->01.15% (480B) 0x41C5C8: main (in /bin/bash)
+|     
+->08.49% (3,536B) 0x4662B0: xrealloc (in /bin/bash)
+| ->05.28% (2,200B) 0x451325: fd_to_buffered_stream (in /bin/bash)
+| | ->05.28% (2,200B) 0x451386: with_input_from_buffered_stream (in /bin/bash)
+| |   ->05.28% (2,200B) 0x41CE3F: main (in /bin/bash)
+| |     
+| ->01.40% (584B) 0x438904: maybe_make_export_env (in /bin/bash)
+| | ->01.40% (584B) 0x460E43: ??? (in /bin/bash)
+| |   ->01.40% (584B) 0x4613C7: set_locale_var (in /bin/bash)
+| |     ->01.40% (584B) 0x461519: set_default_lang (in /bin/bash)
+| |       ->01.40% (584B) 0x41C918: main (in /bin/bash)
+| |         
+| ->01.19% (496B) 0x4225C1: ??? (in /bin/bash)
+| | ->01.19% (496B) 0x424FC7: yyparse (in /bin/bash)
+| |   ->01.19% (496B) 0x41D398: parse_command (in /bin/bash)
+| |     ->01.19% (496B) 0x41D464: read_command (in /bin/bash)
+| |       ->01.19% (496B) 0x41D6B6: reader_loop (in /bin/bash)
+| |         ->01.19% (496B) 0x41CDA7: main (in /bin/bash)
+| |           
+| ->00.61% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->08.03% (3,344B) 0x36FF629B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+| ->08.03% (3,344B) 0x36FF62A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+|   ->08.03% (3,344B) 0x36FF6295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->08.03% (3,344B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->08.03% (3,344B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->08.03% (3,344B) 0x41BFA9: main (in /bin/bash)
+|           
+->04.92% (2,048B) 0x36FF62F58F: read_alias_file (in /lib64/libc-2.12.so)
+| ->04.92% (2,048B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->04.92% (2,048B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->04.92% (2,048B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->04.92% (2,048B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->04.92% (2,048B) 0x41BFA9: main (in /bin/bash)
+|           
+->03.84% (1,600B) 0x36FF62F3E1: read_alias_file (in /lib64/libc-2.12.so)
+| ->03.84% (1,600B) 0x36FF62F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+|   ->03.84% (1,600B) 0x36FF6296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+|     ->03.84% (1,600B) 0x36FF628DDC: setlocale (in /lib64/libc-2.12.so)
+|       ->03.84% (1,600B) 0x46154E: set_default_locale (in /bin/bash)
+|         ->03.84% (1,600B) 0x41BFA9: main (in /bin/bash)
+|           
+->01.40% (584B) 0x36FF62FC84: _nl_make_l10nflist (in /lib64/libc-2.12.so)
+| ->01.04% (432B) 0x36FF62FDC4: _nl_make_l10nflist (in /lib64/libc-2.12.so)
+| | ->01.04% (432B) in 2 places, all below massif's threshold (01.00%)
+| |   
+| ->00.37% (152B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.11% (462B) 0x36FF62FB37: _nl_make_l10nflist (in /lib64/libc-2.12.so)
+| ->01.11% (462B) in 5 places, all below massif's threshold (01.00%)
+|   
+->01.86% (775B) in 2+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 49      1,016,302           41,560           34,316         7,244            0
+ 50      1,022,748           41,536           34,314         7,222            0
+ 51      1,027,758           41,536           34,314         7,222            0
+ 52      1,037,919           41,248           34,046         7,202            0
+ 53      1,040,064           35,504           28,950         6,554            0

@@ -1,0 +1,1 @@
+Answer: The order can be 4,2,6,1,7,3,5

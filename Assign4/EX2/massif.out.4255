@@ -1,0 +1,1030 @@
+desc: (none)
+cmd: compare
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1691016
+mem_heap_B=32816
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1694980
+mem_heap_B=32816
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=peak
+n1: 32816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32816 0x35148A864F: __alloc_dir (in /lib64/libc-2.12.so)
+  n1: 32816 0x35148E81F8: get_nprocs_conf (in /lib64/libc-2.12.so)
+   n1: 32816 0x35148AEC93: sysconf (in /lib64/libc-2.12.so)
+    n1: 32816 0x3522C0ECFD: ??? (in /usr/lib64/libgomp.so.1.0.0)
+     n1: 32816 0x3522C05451: ??? (in /usr/lib64/libgomp.so.1.0.0)
+      n1: 32816 0x3522C10A24: ??? (in /usr/lib64/libgomp.so.1.0.0)
+       n0: 32816 0x3522C03E61: ??? (in /usr/lib64/libgomp.so.1.0.0)
+#-----------
+snapshot=3
+#-----------
+time=1698171
+mem_heap_B=8
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1738451
+mem_heap_B=72
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1753182
+mem_heap_B=136
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1754140
+mem_heap_B=200
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1814586
+mem_heap_B=264
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1822721
+mem_heap_B=1088
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1829150
+mem_heap_B=576
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1837247
+mem_heap_B=1270
+mem_heap_extra_B=202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1844725
+mem_heap_B=1476
+mem_heap_extra_B=324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1855171
+mem_heap_B=7745
+mem_heap_extra_B=335
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1866057
+mem_heap_B=11865
+mem_heap_extra_B=351
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1870527
+mem_heap_B=11645
+mem_heap_extra_B=243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1876950
+mem_heap_B=11581
+mem_heap_extra_B=235
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11581 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 6269 0x3526B7D3EE: ConfigureFileToStringInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 6269 0x3526A7C7F9: GetConfigureOptions (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 6269 0x3526B337CE: ??? (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 6269 0x3526B33B38: GetPolicyValue (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 6269 0x3526B62E31: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 6269 0x3526B63020: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 6269 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+        n1: 6269 0x40099A: ??? (in /usr/bin/compare)
+         n0: 6269 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 4120 0x3526B7CFB9: AcquireStringInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 4120 0x3526B7D43C: ConfigureFileToStringInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 4120 0x3526A7C7F9: GetConfigureOptions (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 4120 0x3526B337CE: ??? (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 4120 0x3526B33B38: GetPolicyValue (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 4120 0x3526B62E31: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 4120 0x3526B63020: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+        n1: 4120 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+         n1: 4120 0x40099A: ??? (in /usr/bin/compare)
+          n0: 4120 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n3: 768 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 512 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 512 in 8 places, all below massif's threshold (01.00%)
+  n1: 192 0x3526AF867A: NewLinkedList (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 192 in 4 places, all below massif's threshold (01.00%)
+  n0: 64 in 1 place, below massif's threshold (01.00%)
+ n1: 256 0x3526AF8621: NewLinkedList (in /usr/lib64/libMagickCore.so.5.0.0)
+  n0: 256 in 4 places, all below massif's threshold (01.00%)
+ n0: 168 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=16
+#-----------
+time=1880644
+mem_heap_B=17786
+mem_heap_extra_B=238
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2087953
+mem_heap_B=11517
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2094284
+mem_heap_B=920
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2101638
+mem_heap_B=920
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2105888
+mem_heap_B=984
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2112718
+mem_heap_B=792
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2117518
+mem_heap_B=912
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2124321
+mem_heap_B=1096
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2130548
+mem_heap_B=1597
+mem_heap_extra_B=235
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2134523
+mem_heap_B=1629
+mem_heap_extra_B=243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2141687
+mem_heap_B=1701
+mem_heap_extra_B=259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2150191
+mem_heap_B=1733
+mem_heap_extra_B=275
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2164464
+mem_heap_B=1742
+mem_heap_extra_B=290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2171009
+mem_heap_B=1758
+mem_heap_extra_B=322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2178392
+mem_heap_B=1767
+mem_heap_extra_B=337
+mem_stacks_B=0
+heap_tree=detailed
+n10: 1767 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 960 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n11: 704 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 64 0x3526B10B3E: LogComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15D70: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B0EFAE: LocaleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15D75: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B5848E: RandomComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15D7A: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526A7C8EE: ConfigureComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E7F: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B32C9E: PolicyComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E84: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526A5313E: CacheComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E89: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B5920E: RegistryComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E93: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B62FE2: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526A5D12E: CoderComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15E9D: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B14EBE: MagickComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15EA3: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n1: 64 0x3526B196C8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x40099A: ??? (in /usr/bin/compare)
+      n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n3: 128 0x3526AF867A: NewLinkedList (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 64 0x3526AE0860: GetExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+    n2: 64 0x3526AE1216: AcquireExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B196CD: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 64 0x40099A: ??? (in /usr/bin/compare)
+        n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+     n0: 0 in 1 place, below massif's threshold (01.00%)
+   n1: 64 0x3526B3372C: ??? (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B33B38: GetPolicyValue (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B62E31: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x3526B63020: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 64 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+        n1: 64 0x40099A: ??? (in /usr/bin/compare)
+         n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+  n1: 64 0x3526AE0869: GetExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n2: 64 0x3526AE1216: AcquireExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B196CD: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x40099A: ??? (in /usr/bin/compare)
+       n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 64 0x3526B6FEAF: NewSplayTree (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 64 0x3526B1953D: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x40099A: ??? (in /usr/bin/compare)
+       n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 184 0x3522C042B7: ??? (in /usr/lib64/libgomp.so.1.0.0)
+  n1: 176 0x3522C0CBC9: ??? (in /usr/lib64/libgomp.so.1.0.0)
+   n1: 176 0x3522C067E7: omp_set_num_threads (in /usr/lib64/libgomp.so.1.0.0)
+    n1: 176 0x3526B62F87: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 176 0x3526B634DF: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 176 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 176 0x40099A: ??? (in /usr/bin/compare)
+        n0: 176 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 8 in 1 place, below massif's threshold (01.00%)
+ n3: 128 0x3526AF8621: NewLinkedList (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 64 0x3526AE0860: GetExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n2: 64 0x3526AE1216: AcquireExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B196CD: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x40099A: ??? (in /usr/bin/compare)
+       n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 64 0x3526B3372C: ??? (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 64 0x3526B33B38: GetPolicyValue (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 64 0x3526B62E31: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 64 0x3526B63020: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 64 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 64 0x40099A: ??? (in /usr/bin/compare)
+        n0: 64 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n2: 122 0x3528802907: lt__malloc (in /usr/lib64/libltdl.so.7.2.1)
+  n2: 88 0x35288029B4: lt__zalloc (in /usr/lib64/libltdl.so.7.2.1)
+   n1: 72 0x3528802778: preopen_LTX_get_vtable (in /usr/lib64/libltdl.so.7.2.1)
+    n1: 72 0x3528805EC7: ??? (in /usr/lib64/libltdl.so.7.2.1)
+     n1: 72 0x3528805FB1: lt_dlinit (in /usr/lib64/libltdl.so.7.2.1)
+      n1: 72 0x3526B19582: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 72 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+        n1: 72 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+         n1: 72 0x40099A: ??? (in /usr/bin/compare)
+          n0: 72 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+   n0: 16 in 1 place, below massif's threshold (01.00%)
+  n0: 34 in 4 places, all below massif's threshold (01.00%)
+ n1: 88 0x3526B6FE59: NewSplayTree (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 88 0x3526B1953D: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 88 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 88 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 88 0x40099A: ??? (in /usr/bin/compare)
+      n0: 88 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 80 0x3526B193C1: AcquireModuleInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 80 0x3526B1955B: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 80 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 80 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 80 0x40099A: ??? (in /usr/bin/compare)
+      n0: 80 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 72 0x3526B33746: ??? (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 72 0x3526B33B38: GetPolicyValue (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 72 0x3526B62E31: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 72 0x3526B63020: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 72 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 72 0x40099A: ??? (in /usr/bin/compare)
+       n0: 72 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 56 0x3526AE1206: AcquireExceptionInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 56 0x3526B196CD: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 56 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 56 0x40099A: ??? (in /usr/bin/compare)
+     n0: 56 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 45 in 8 places, all below massif's threshold (01.00%)
+ n1: 32 0x3526B70FB8: AddValueToSplayTree (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 32 0x3526B19575: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+   n1: 32 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+    n1: 32 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 32 0x40099A: ??? (in /usr/bin/compare)
+      n0: 32 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+#-----------
+snapshot=31
+#-----------
+time=2182644
+mem_heap_B=1864
+mem_heap_extra_B=368
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2188646
+mem_heap_B=1837
+mem_heap_extra_B=323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2196609
+mem_heap_B=1909
+mem_heap_extra_B=339
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2202995
+mem_heap_B=2061
+mem_heap_extra_B=355
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2210353
+mem_heap_B=19413
+mem_heap_extra_B=459
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2215767
+mem_heap_B=19221
+mem_heap_extra_B=435
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2222010
+mem_heap_B=19170
+mem_heap_extra_B=438
+mem_stacks_B=0
+heap_tree=detailed
+n4: 19170 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16792 0x3526B022C6: AcquireImageInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 16792 0x4009A7: ??? (in /usr/bin/compare)
+   n0: 16792 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 1408 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 1152 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 1152 in 18 places, all below massif's threshold (01.00%)
+  n0: 256 in 3 places, all below massif's threshold (01.00%)
+ n0: 706 in 16 places, all below massif's threshold (01.00%)
+ n2: 264 0x3528802907: lt__malloc (in /usr/lib64/libltdl.so.7.2.1)
+  n1: 248 0x35288029B4: lt__zalloc (in /usr/lib64/libltdl.so.7.2.1)
+   n0: 248 in 4 places, all below massif's threshold (01.00%)
+  n0: 16 in 4 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=38
+#-----------
+time=2226245
+mem_heap_B=21353
+mem_heap_extra_B=503
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2231795
+mem_heap_B=22677
+mem_heap_extra_B=643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2237611
+mem_heap_B=22725
+mem_heap_extra_B=691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2244528
+mem_heap_B=23341
+mem_heap_extra_B=755
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2254318
+mem_heap_B=24941
+mem_heap_extra_B=763
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2254439
+mem_heap_B=25965
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2281420
+mem_heap_B=26989
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2283505
+mem_heap_B=26421
+mem_heap_extra_B=755
+mem_stacks_B=0
+heap_tree=detailed
+n6: 26421 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16792 0x3526B022C6: AcquireImageInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 16792 0x4009A7: ??? (in /usr/bin/compare)
+   n0: 16792 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 3344 0x3514829B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+  n1: 3344 0x351482A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+   n1: 3344 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 3344 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 3344 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 3344 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 3344 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 2048 0x351482F58F: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 2048 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 2048 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 2048 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 2048 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 2048 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 2048 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 1600 0x351482F3E1: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 1600 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 1600 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 1600 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 1600 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 1600 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 1600 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 1408 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 1152 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 1152 in 18 places, all below massif's threshold (01.00%)
+  n0: 256 in 3 places, all below massif's threshold (01.00%)
+ n0: 1229 in 19 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=46
+#-----------
+time=2301870
+mem_heap_B=26452
+mem_heap_extra_B=764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2304305
+mem_heap_B=26432
+mem_heap_extra_B=648
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2386756
+mem_heap_B=26368
+mem_heap_extra_B=640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2395181
+mem_heap_B=9200
+mem_heap_extra_B=568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2396111
+mem_heap_B=9136
+mem_heap_extra_B=560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2397041
+mem_heap_B=9072
+mem_heap_extra_B=552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2397989
+mem_heap_B=9008
+mem_heap_extra_B=544
+mem_stacks_B=0
+heap_tree=detailed
+n8: 9008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3344 0x3514829B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+  n1: 3344 0x351482A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+   n1: 3344 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 3344 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 3344 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 3344 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 3344 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 2048 0x351482F58F: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 2048 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 2048 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 2048 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 2048 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 2048 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 2048 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 1600 0x351482F3E1: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 1600 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 1600 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 1600 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 1600 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 1600 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 1600 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 960 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 832 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 832 in 18 places, all below massif's threshold (01.00%)
+  n0: 128 in 3 places, all below massif's threshold (01.00%)
+ n0: 488 in 20 places, all below massif's threshold (01.00%)
+ n2: 264 0x3528802907: lt__malloc (in /usr/lib64/libltdl.so.7.2.1)
+  n1: 248 0x35288029B4: lt__zalloc (in /usr/lib64/libltdl.so.7.2.1)
+   n0: 248 in 4 places, all below massif's threshold (01.00%)
+  n0: 16 in 4 places, all below massif's threshold (01.00%)
+ n2: 184 0x3522C042B7: ??? (in /usr/lib64/libgomp.so.1.0.0)
+  n1: 176 0x3522C0CBC9: ??? (in /usr/lib64/libgomp.so.1.0.0)
+   n1: 176 0x3522C067E7: omp_set_num_threads (in /usr/lib64/libgomp.so.1.0.0)
+    n1: 176 0x3526B62F87: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 176 0x3526B634DF: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 176 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 176 0x40099A: ??? (in /usr/bin/compare)
+        n0: 176 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 8 in 1 place, below massif's threshold (01.00%)
+ n1: 120 0x351482A107: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+  n1: 120 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+   n1: 120 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+    n1: 120 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+     n1: 120 0x4009CE: ??? (in /usr/bin/compare)
+      n0: 120 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+#-----------
+snapshot=53
+#-----------
+time=2398952
+mem_heap_B=8944
+mem_heap_extra_B=536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2400002
+mem_heap_B=8880
+mem_heap_extra_B=528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2400951
+mem_heap_B=8816
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2403281
+mem_heap_B=8872
+mem_heap_extra_B=536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2403456
+mem_heap_B=9000
+mem_heap_extra_B=552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2403616
+mem_heap_B=9064
+mem_heap_extra_B=560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2403862
+mem_heap_B=9051
+mem_heap_extra_B=549
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2404126
+mem_heap_B=8987
+mem_heap_extra_B=541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2404322
+mem_heap_B=8859
+mem_heap_extra_B=525
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2404478
+mem_heap_B=8691
+mem_heap_extra_B=493
+mem_stacks_B=0
+heap_tree=detailed
+n8: 8691 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3344 0x3514829B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+  n1: 3344 0x351482A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+   n1: 3344 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 3344 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 3344 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 3344 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 3344 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 2048 0x351482F58F: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 2048 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 2048 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 2048 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 2048 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 2048 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 2048 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 1600 0x351482F3E1: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 1600 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 1600 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 1600 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 1600 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 1600 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 1600 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 768 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 640 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 640 in 18 places, all below massif's threshold (01.00%)
+  n0: 128 in 3 places, all below massif's threshold (01.00%)
+ n0: 363 in 20 places, all below massif's threshold (01.00%)
+ n2: 264 0x3528802907: lt__malloc (in /usr/lib64/libltdl.so.7.2.1)
+  n1: 248 0x35288029B4: lt__zalloc (in /usr/lib64/libltdl.so.7.2.1)
+   n0: 248 in 4 places, all below massif's threshold (01.00%)
+  n0: 16 in 4 places, all below massif's threshold (01.00%)
+ n2: 184 0x3522C042B7: ??? (in /usr/lib64/libgomp.so.1.0.0)
+  n1: 176 0x3522C0CBC9: ??? (in /usr/lib64/libgomp.so.1.0.0)
+   n1: 176 0x3522C067E7: omp_set_num_threads (in /usr/lib64/libgomp.so.1.0.0)
+    n1: 176 0x3526B62F87: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 176 0x3526B634DF: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 176 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 176 0x40099A: ??? (in /usr/bin/compare)
+        n0: 176 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 8 in 1 place, below massif's threshold (01.00%)
+ n1: 120 0x351482A107: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+  n1: 120 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+   n1: 120 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+    n1: 120 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+     n1: 120 0x4009CE: ??? (in /usr/bin/compare)
+      n0: 120 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+#-----------
+snapshot=63
+#-----------
+time=2404609
+mem_heap_B=8627
+mem_heap_extra_B=485
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2404806
+mem_heap_B=8475
+mem_heap_extra_B=461
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2405745
+mem_heap_B=8411
+mem_heap_extra_B=453
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2406714
+mem_heap_B=8347
+mem_heap_extra_B=445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2407703
+mem_heap_B=8283
+mem_heap_extra_B=437
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2408650
+mem_heap_B=8219
+mem_heap_extra_B=429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2409593
+mem_heap_B=8147
+mem_heap_extra_B=413
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2409764
+mem_heap_B=8067
+mem_heap_extra_B=397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2409957
+mem_heap_B=7939
+mem_heap_extra_B=381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2410933
+mem_heap_B=7875
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=detailed
+n8: 7875 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3344 0x3514829B25: _nl_intern_locale_data (in /lib64/libc-2.12.so)
+  n1: 3344 0x351482A17B: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+   n1: 3344 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 3344 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 3344 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 3344 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 3344 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 2048 0x351482F58F: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 2048 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 2048 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 2048 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 2048 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 2048 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 2048 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n1: 1600 0x351482F3E1: read_alias_file (in /lib64/libc-2.12.so)
+  n1: 1600 0x351482F77C: _nl_expand_alias (in /lib64/libc-2.12.so)
+   n1: 1600 0x35148296FF: _nl_find_locale (in /lib64/libc-2.12.so)
+    n1: 1600 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+     n1: 1600 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+      n1: 1600 0x4009CE: ??? (in /usr/bin/compare)
+       n0: 1600 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+ n2: 264 0x3528802907: lt__malloc (in /usr/lib64/libltdl.so.7.2.1)
+  n2: 248 0x35288029B4: lt__zalloc (in /usr/lib64/libltdl.so.7.2.1)
+   n0: 160 in 3 places, all below massif's threshold (01.00%)
+   n1: 88 0x3528805476: ??? (in /usr/lib64/libltdl.so.7.2.1)
+    n1: 88 0x35288057D3: lt_dlopenadvise (in /usr/lib64/libltdl.so.7.2.1)
+     n1: 88 0x35288024F2: lt_dlpreload_open (in /usr/lib64/libltdl.so.7.2.1)
+      n1: 88 0x3526B19582: InitializeModuleList (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 88 0x3526B196D8: ModuleComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+        n1: 88 0x3526B15EA8: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+         n1: 88 0x40099A: ??? (in /usr/bin/compare)
+          n0: 88 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 16 in 4 places, all below massif's threshold (01.00%)
+ n2: 192 0x3526B66D7B: AllocateSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+  n1: 192 0x3526B67023: AcquireSemaphoreInfo (in /usr/lib64/libMagickCore.so.5.0.0)
+   n0: 192 in 18 places, all below massif's threshold (01.00%)
+  n0: 0 in 3 places, all below massif's threshold (01.00%)
+ n2: 184 0x3522C042B7: ??? (in /usr/lib64/libgomp.so.1.0.0)
+  n1: 176 0x3522C0CBC9: ??? (in /usr/lib64/libgomp.so.1.0.0)
+   n1: 176 0x3522C067E7: omp_set_num_threads (in /usr/lib64/libgomp.so.1.0.0)
+    n1: 176 0x3526B62F87: SetMagickResourceLimit (in /usr/lib64/libMagickCore.so.5.0.0)
+     n1: 176 0x3526B634DF: ResourceComponentGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+      n1: 176 0x3526B15E98: MagickCoreGenesis (in /usr/lib64/libMagickCore.so.5.0.0)
+       n1: 176 0x40099A: ??? (in /usr/bin/compare)
+        n0: 176 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+  n0: 8 in 1 place, below massif's threshold (01.00%)
+ n0: 123 in 20 places, all below massif's threshold (01.00%)
+ n1: 120 0x351482A107: _nl_load_locale_from_archive (in /lib64/libc-2.12.so)
+  n1: 120 0x35148295E8: _nl_find_locale (in /lib64/libc-2.12.so)
+   n1: 120 0x3514828DDC: setlocale (in /lib64/libc-2.12.so)
+    n1: 120 0x3525EDD3E9: MagickCommandGenesis (in /usr/lib64/libMagickWand.so.5.0.0)
+     n1: 120 0x4009CE: ??? (in /usr/bin/compare)
+      n0: 120 0x351481ED5B: (below main) (in /lib64/libc-2.12.so)
+#-----------
+snapshot=73
+#-----------
+time=2411812
+mem_heap_B=7811
+mem_heap_extra_B=365
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2415966
+mem_heap_B=7747
+mem_heap_extra_B=357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2416887
+mem_heap_B=7683
+mem_heap_extra_B=349
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=2529302
+mem_heap_B=7652
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=2529600
+mem_heap_B=7592
+mem_heap_extra_B=320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=2529732
+mem_heap_B=5536
+mem_heap_extra_B=264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=2529864
+mem_heap_B=4792
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=2529996
+mem_heap_B=4248
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=2531740
+mem_heap_B=2080
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,14 @@
+Name: Zhouxiang Meng
+Date: 10/15/15
+
+Amortized Analysis of the Dynamic Array (Written)
+
+1. 56
+
+8 + 8 + 16 + 24 
+
+
+2. 260
+8 + 10 + 12 + ….. + 32
+8 + 10 + 12 + 14 + 16 = 60
+3. The initial capacity of the array is assumed that N / 2, if you do not have a pop-up followed by a push operation will take O (N ^ 2) of the total cost. This can be avoided by shrinking an array of policy changes to reduce (pop only), halved its capacity, when full array quarter or less.
